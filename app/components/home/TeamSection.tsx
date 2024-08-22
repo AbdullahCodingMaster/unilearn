@@ -21,25 +21,25 @@ const teamMembers: TeamMember[] = [
     image: "/images/muhammad-abdullah-awan.jpg", // Replace with actual image path
   },
   {
-    name: "Jane Doe",
+    name: "Umair Imtiaz",
     role: "Lead Developer",
     description:
-      "Jane is the lead developer at UniLearn, responsible for shaping the platform's core features and ensuring its technical excellence.",
-    image: "/images/jane-doe.jpg", // Replace with actual image path
+      "Umair is the lead developer at UniLearn, responsible for shaping the platform's core features and ensuring its technical excellence.",
+    image: "/images/umair-imtiaz.jpg", // Replace with actual image path
   },
   {
-    name: "John Smith",
+    name: "Hassan Ali",
     role: "Product Manager",
     description:
-      "John manages the product lifecycle and coordinates between teams to ensure UniLearn meets user needs and market demands.",
-    image: "/images/john-smith.jpg", // Replace with actual image path
+      "Hassan manages the product lifecycle and coordinates between teams to ensure UniLearn meets user needs and market demands.",
+    image: "/images/hassan-ali.jpg", // Replace with actual image path
   },
   {
-    name: "Alice Johnson",
+    name: "Hashaam Ahmed",
     role: "UI/UX Designer",
     description:
-      "Alice designs user interfaces that are intuitive and engaging, ensuring a seamless user experience on the UniLearn platform.",
-    image: "/images/alice-johnson.jpg", // Replace with actual image path
+      "Hashaam designs user interfaces that are intuitive and engaging, ensuring a seamless user experience on the UniLearn platform.",
+    image: "/images/hashaam-ahmed.jpg", // Replace with actual image path
   },
 ];
 
