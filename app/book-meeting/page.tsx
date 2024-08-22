@@ -1,11 +1,12 @@
 // ./app/book-meeting/page.tsx
-"use client"
+
+"use client";  // This line marks the component as a Client Component
 
 import React, { useState } from "react";
 import { format } from "date-fns";
 import Header from "../components/Header";
-// import Footer from "../components/Footer";
-import { DatePicker, TimePicker } from 'react-date-picker'; // Import necessary date and time picker components
+import Footer from "../components/Footer";
+import DatePicker from 'react-date-picker'; // Make sure to import the correct components
 
 export default function BookMeetingPage() {
   const [date, setDate] = useState<Date | null>(null);
@@ -40,6 +41,7 @@ export default function BookMeetingPage() {
 
             <form className="mt-8 space-y-6">
               <div className="grid gap-y-4">
+                {/* Name Input */}
                 <div>
                   <label
                     htmlFor="name"
@@ -57,6 +59,7 @@ export default function BookMeetingPage() {
                   />
                 </div>
 
+                {/* Email Input */}
                 <div>
                   <label
                     htmlFor="email"
@@ -74,6 +77,7 @@ export default function BookMeetingPage() {
                   />
                 </div>
 
+                {/* Contact No Input */}
                 <div>
                   <label
                     htmlFor="contact-no"
@@ -90,6 +94,7 @@ export default function BookMeetingPage() {
                   />
                 </div>
 
+                {/* University/Organization Input */}
                 <div>
                   <label
                     htmlFor="university"
@@ -106,6 +111,7 @@ export default function BookMeetingPage() {
                   />
                 </div>
 
+                {/* Department Input */}
                 <div>
                   <label
                     htmlFor="department"
@@ -122,6 +128,7 @@ export default function BookMeetingPage() {
                   />
                 </div>
 
+                {/* Subject Input */}
                 <div>
                   <label
                     htmlFor="subject"
@@ -138,6 +145,7 @@ export default function BookMeetingPage() {
                   />
                 </div>
 
+                {/* Date Picker */}
                 <div>
                   <label
                     htmlFor="date"
@@ -154,6 +162,7 @@ export default function BookMeetingPage() {
                   />
                 </div>
 
+                {/* Time Picker */}
                 <div>
                   <label
                     htmlFor="time"
@@ -172,6 +181,7 @@ export default function BookMeetingPage() {
                   />
                 </div>
 
+                {/* Message Input */}
                 <div>
                   <label
                     htmlFor="body"
@@ -201,7 +211,7 @@ export default function BookMeetingPage() {
             <div className="mt-12 text-center">
               <h2 className="text-lg font-semibold text-gray-900">Meeting Details</h2>
               <p className="mt-2 text-base text-gray-600">
-                Alfoze QOBE Demo
+                UniLearn Demo
                 <br />
                 15 min
                 <br />
@@ -216,7 +226,7 @@ export default function BookMeetingPage() {
           </div>
         </div>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
