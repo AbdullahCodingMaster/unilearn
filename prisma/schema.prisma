@@ -1,26 +1,20 @@
-// prisma/schema.prisma
-
-datasource db {
-  provider = "mongodb"
-  url      = env("DATABASE_URL")
-}
-
 generator client {
   provider = "prisma-client-js"
 }
 
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
 model University {
-  id                String   @id @default(auto()) @map("_id") @db.ObjectId
-  name              String
-  email             String   @unique
-  address           String?
-  contactNumber     String?
-  website           String?
-  adminName         String
-  adminEmail        String   @unique
-  password          String
-  subscriptionPlan  String?
-  termsAccepted     Boolean  @default(false)
-  createdAt         DateTime @default(now())
-  updatedAt         DateTime @updatedAt
+  id            Int       @id @default(autoincrement())
+  name          String
+  address       String
+  contactNumber String
+  website       String?
+  admin         String?
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 }
